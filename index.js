@@ -8,7 +8,7 @@ app.start(ctx => {
 });
 
 app.hears('data', ctx => {
-    let res = data();
+    let res = data.data();
     return ctx.reply(res);
 });
 
