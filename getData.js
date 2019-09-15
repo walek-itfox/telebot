@@ -5,6 +5,7 @@ const path = "https://iss.moex.com/iss/engines/stock/markets/shares/securities/A
 module.exports.data = function() {
   return request(path, (err, res, body) => {
     console.log(JSON.parse(body).marketdata.data);
+    console.log(err);
     return JSON.parse(body).marketdata.data;
   });
 }
