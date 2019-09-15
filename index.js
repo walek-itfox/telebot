@@ -9,7 +9,7 @@ app.start(ctx => {
 
 app.hears('data', ctx => {
     let res = data();
-    ctx.reply(res);
+    return ctx.reply(res);
 });
 
 app.startPolling();
